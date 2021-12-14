@@ -1,0 +1,85 @@
+body,
+#gameboard {
+  height: 100%;
+  background-color: grey;
+}
+
+#container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  cursor: default;
+}
+
+#container label {
+  color: white;
+  position: relative;
+  top: -2px;
+}
+
+#container form {
+  margin-top: 2px;
+  width: 248px;
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  margin-left: -124px;
+}
+
+/* prevent dragging images on game board*/
+#container,
+#gameboard image {
+  user-select: none;
+  user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -ms-user-select: none;
+}
+
+#button text {
+  font-size: 20px;
+  /* make smiley clickthough or it doesn't fire event on ff*/
+  pointer-events: none;
+}
+
+#cells text {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.question text {
+  fill: black;
+}
+
+.cell-1 {
+  fill: blue;
+}
+
+.cell-2 {
+  fill: green;
+}
+
+.cell-3 {
+  fill: red;
+}
+
+.cell-4 {
+  fill: indigo;
+}
+
+.cell-5 {
+  fill: maroon;
+}
+
+.cell-6 {
+  fill: darkturquoise;
+}
+
+.cell-7 {
+  fill: black;
+}
+
+.cell-8 {
+  fill: grey;
+}
