@@ -1,35 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Stupidly Simple Minesweeper</title>
+    <meta name="description" content="Minesweeper" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Minesweeper</title>
-  <meta name="description" content="Minesweeper">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <div id="container">
-    <div id="gameboard"></div>
-    <form>
-      <input type="radio" id="beginner" name="difficulty" value="beginner" checked="checked">
-      <label for="beginner">beginner</label>
-      <input type="radio" id="intermediate" name="difficulty" value="intermediate">
-      <label for="intermediate">intermediate</label>
-      <input type="radio" id="hard" name="difficulty" value="hard">
-      <label for="hard">hard</label>
-    </form>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/vendor/svg.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+  <body>
+    <div id="container">
+      <div id="gameboard"></div>
+      <form>
+        <input
+          type="radio"
+          id="beginner"
+          name="difficulty"
+          value="beginner"
+          checked="checked"
+        />
+        <label for="beginner">beginner</label>
+        <input
+          type="radio"
+          id="intermediate"
+          name="difficulty"
+          value="intermediate"
+        />
+        <label for="intermediate">intermediate</label>
+        <input type="radio" id="hard" name="difficulty" value="hard" />
+        <label for="hard">hard</label>
+      </form>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/vendor/jquery-3.3.1.min.js"><\/script>'
+        );
+    </script>
+    <script src="js/vendor/svg.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
